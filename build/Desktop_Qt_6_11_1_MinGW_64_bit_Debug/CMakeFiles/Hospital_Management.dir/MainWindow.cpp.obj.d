@@ -401,6 +401,7 @@ CMakeFiles/Hospital_Management.dir/MainWindow.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
  C:\Users\ahmad\Documents\Hospital_Management\MedecinForm.h \
  C:\Users\ahmad\Documents\Hospital_Management\MedicamentForm.h \
+ C:\Users\ahmad\Documents\Hospital_Management\PatientForm.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayout.h \

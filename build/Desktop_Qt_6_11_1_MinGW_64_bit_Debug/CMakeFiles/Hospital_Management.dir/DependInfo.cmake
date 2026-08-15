@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/ahmad/Documents/Hospital_Management/MainWindow.cpp" "CMakeFiles/Hospital_Management.dir/MainWindow.cpp.obj" "gcc" "CMakeFiles/Hospital_Management.dir/MainWindow.cpp.obj.d"
   "C:/Users/ahmad/Documents/Hospital_Management/MedecinForm.cpp" "CMakeFiles/Hospital_Management.dir/MedecinForm.cpp.obj" "gcc" "CMakeFiles/Hospital_Management.dir/MedecinForm.cpp.obj.d"
   "C:/Users/ahmad/Documents/Hospital_Management/MedicamentForm.cpp" "CMakeFiles/Hospital_Management.dir/MedicamentForm.cpp.obj" "gcc" "CMakeFiles/Hospital_Management.dir/MedicamentForm.cpp.obj.d"
+  "C:/Users/ahmad/Documents/Hospital_Management/PatientForm.cpp" "CMakeFiles/Hospital_Management.dir/PatientForm.cpp.obj" "gcc" "CMakeFiles/Hospital_Management.dir/PatientForm.cpp.obj.d"
   "C:/Users/ahmad/Documents/Hospital_Management/main.cpp" "CMakeFiles/Hospital_Management.dir/main.cpp.obj" "gcc" "CMakeFiles/Hospital_Management.dir/main.cpp.obj.d"
   )
 

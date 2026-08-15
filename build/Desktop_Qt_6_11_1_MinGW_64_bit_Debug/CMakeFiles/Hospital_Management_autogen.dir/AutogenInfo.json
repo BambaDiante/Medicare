@@ -404,6 +404,12 @@
 			"MU",
 			"EWIEGA46WW/moc_MedicamentForm.cpp",
 			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/PatientForm.h",
+			"MU",
+			"EWIEGA46WW/moc_PatientForm.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -491,6 +497,11 @@
 		],
 		[
 			"C:/Users/ahmad/Documents/Hospital_Management/MedicamentForm.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/PatientForm.cpp",
 			"MU",
 			null
 		],

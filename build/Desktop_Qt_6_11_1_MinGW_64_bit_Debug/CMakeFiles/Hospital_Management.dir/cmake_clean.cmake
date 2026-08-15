@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Hospital_Management.dir/MedecinForm.cpp.obj.d"
   "CMakeFiles/Hospital_Management.dir/MedicamentForm.cpp.obj"
   "CMakeFiles/Hospital_Management.dir/MedicamentForm.cpp.obj.d"
+  "CMakeFiles/Hospital_Management.dir/PatientForm.cpp.obj"
+  "CMakeFiles/Hospital_Management.dir/PatientForm.cpp.obj.d"
   "CMakeFiles/Hospital_Management.dir/main.cpp.obj"
   "CMakeFiles/Hospital_Management.dir/main.cpp.obj.d"
   "Hospital_Management.exe"

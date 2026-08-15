@@ -639,6 +639,8 @@ Hospital_Management_autogen/timestamp: \
 	C:/Users/ahmad/Documents/Hospital_Management/MedecinForm.h \
 	C:/Users/ahmad/Documents/Hospital_Management/MedicamentForm.cpp \
 	C:/Users/ahmad/Documents/Hospital_Management/MedicamentForm.h \
+	C:/Users/ahmad/Documents/Hospital_Management/PatientForm.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/PatientForm.h \
 	C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
 	C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/package-manager.cmake \
 	C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake \

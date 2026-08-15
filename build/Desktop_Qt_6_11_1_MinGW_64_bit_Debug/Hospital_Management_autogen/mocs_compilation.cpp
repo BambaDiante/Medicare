@@ -2,3 +2,4 @@
 #include "EWIEGA46WW/moc_MainWindow.cpp"
 #include "EWIEGA46WW/moc_MedecinForm.cpp"
 #include "EWIEGA46WW/moc_MedicamentForm.cpp"
+#include "EWIEGA46WW/moc_PatientForm.cpp"

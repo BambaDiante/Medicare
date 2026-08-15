@@ -250,6 +250,30 @@ MedicamentForm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedicamentForm.cpp.s
 .PHONY : MedicamentForm.cpp.s
 
+PatientForm.obj: PatientForm.cpp.obj
+.PHONY : PatientForm.obj
+
+# target to build an object file
+PatientForm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/PatientForm.cpp.obj
+.PHONY : PatientForm.cpp.obj
+
+PatientForm.i: PatientForm.cpp.i
+.PHONY : PatientForm.i
+
+# target to preprocess a source file
+PatientForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/PatientForm.cpp.i
+.PHONY : PatientForm.cpp.i
+
+PatientForm.s: PatientForm.cpp.s
+.PHONY : PatientForm.s
+
+# target to generate assembly for a file
+PatientForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/PatientForm.cpp.s
+.PHONY : PatientForm.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -297,6 +321,9 @@ help:
 	@echo ... MedicamentForm.obj
 	@echo ... MedicamentForm.i
 	@echo ... MedicamentForm.s
+	@echo ... PatientForm.obj
+	@echo ... PatientForm.i
+	@echo ... PatientForm.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

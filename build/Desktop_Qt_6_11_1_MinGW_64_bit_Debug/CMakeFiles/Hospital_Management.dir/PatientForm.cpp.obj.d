@@ -1,9 +1,8 @@
-CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/mocs_compilation.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Hospital_Management_autogen\mocs_compilation.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Hospital_Management_autogen\EWIEGA46WW/moc_MainWindow.cpp \
- C:/Users/ahmad/Documents/Hospital_Management/MainWindow.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
+CMakeFiles/Hospital_Management.dir/PatientForm.cpp.obj: \
+ C:\Users\ahmad\Documents\Hospital_Management\PatientForm.cpp \
+ C:\Users\ahmad\Documents\Hospital_Management\PatientForm.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qglobal.h \
@@ -157,7 +156,6 @@ CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/mocs_compilation.
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtguiexports.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qwindowdefs.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qobjectdefs.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qnamespace.h \
@@ -386,30 +384,39 @@ CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/mocs_compilation.
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabwidget.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/QStackedWidget \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qstackedwidget.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qframe.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/QPushButton \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qpushbutton.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QGridLayout \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayout.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QLabel \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qframe.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qpicture.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qiodevice.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtextdocument.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qurl.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QLineEdit \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlineedit.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtextcursor.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtextformat.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qpen.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtextoption.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/qtmochelpers.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/qtmocconstants.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/q20algorithm.h \
- C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Hospital_Management_autogen\EWIEGA46WW/moc_MedecinForm.cpp \
- C:/Users/ahmad/Documents/Hospital_Management/MedecinForm.h \
- C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Hospital_Management_autogen\EWIEGA46WW/moc_MedicamentForm.cpp \
- C:/Users/ahmad/Documents/Hospital_Management/MedicamentForm.h \
- C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Hospital_Management_autogen\EWIEGA46WW/moc_PatientForm.cpp \
- C:/Users/ahmad/Documents/Hospital_Management/PatientForm.h
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMessageBox \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmessagebox.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlDatabase \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qsqldatabase.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qtsqlglobal.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qtsql-config.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qtsqlexports.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qmetaobject.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlQuery \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qsqlquery.h \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlError \
+ C:/Qt/6.11.1/mingw_64/include/QtSql/qsqlerror.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QDebug

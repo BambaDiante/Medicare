@@ -2,6 +2,7 @@
 
 #include "MedecinForm.h"
 #include "MedicamentForm.h"
+#include "PatientForm.h"
 
 #include <QHBoxLayout>
 #include <QVBoxLayout>
@@ -35,12 +36,18 @@ MainWindow::MainWindow(QWidget *parent)
 
     medicamentForm = new MedicamentForm();
 
+    patientForm = new PatientForm();
+
 
     //Ajout des formulaires au stackwidget
 
     stackedWidget->addWidget(medecinForm);
 
     stackedWidget->addWidget(medicamentForm);
+
+    stackedWidget->addWidget(patientForm);
+
+
 
 
     //creation de menu
@@ -95,6 +102,13 @@ MainWindow::MainWindow(QWidget *parent)
         &QPushButton::clicked,
         this,
         &MainWindow::afficherFormulaireMedicament
+        );
+
+    connect(
+        ajouterPatientButton,
+        &QPushButton::clicked,
+        this,
+        &MainWindow::afficherFormulairePatient
         );
 
 
@@ -163,6 +177,9 @@ QWidget *MainWindow::creerMenu()
     ajouterMedicamentButton =
         new QPushButton("Ajouter un médicament");
 
+    ajouterPatientButton=
+        new QPushButton("Ajouter un patient");
+
 
 
     patientsButton =
@@ -176,6 +193,8 @@ QWidget *MainWindow::creerMenu()
     layout->addWidget(ajouterMedecinButton);
 
     layout->addWidget(ajouterMedicamentButton);
+
+    layout->addWidget(ajouterPatientButton);
 
     layout->addWidget(patientsButton);
 
@@ -299,6 +318,11 @@ void MainWindow::afficherFormulaireMedecin()
 void MainWindow::afficherFormulaireMedicament()
 {
     stackedWidget->setCurrentWidget(medicamentForm);
+}
+
+void MainWindow::afficherFormulairePatient()
+{
+    stackedWidget->setCurrentWidget(patientForm);
 }
 
 

@@ -9,6 +9,7 @@
 
 class MedecinForm;
 class MedicamentForm;
+class PatientForm;
 
 class MainWindow : public QMainWindow
 {
@@ -37,6 +38,8 @@ private:
 
     MedicamentForm *medicamentForm;
 
+    PatientForm *patientForm;
+
     QWidget *patientsPage;
 
 
@@ -49,6 +52,8 @@ private:
     QPushButton *ajouterMedecinButton;
 
     QPushButton *ajouterMedicamentButton;
+
+    QPushButton *ajouterPatientButton;
 
     QPushButton *patientsButton;
 
@@ -80,6 +85,8 @@ private slots:
     void afficherFormulaireMedecin();
 
     void afficherFormulaireMedicament();
+
+    void afficherFormulairePatient();
 
     void afficherPatients();
 };
