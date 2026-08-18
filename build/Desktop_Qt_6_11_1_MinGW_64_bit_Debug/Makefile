@@ -154,6 +154,30 @@ Hospital_Management_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management_autogen.dir\build.make CMakeFiles/Hospital_Management_autogen.dir/build
 .PHONY : Hospital_Management_autogen/fast
 
+ConsultationForm.obj: ConsultationForm.cpp.obj
+.PHONY : ConsultationForm.obj
+
+# target to build an object file
+ConsultationForm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationForm.cpp.obj
+.PHONY : ConsultationForm.cpp.obj
+
+ConsultationForm.i: ConsultationForm.cpp.i
+.PHONY : ConsultationForm.i
+
+# target to preprocess a source file
+ConsultationForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationForm.cpp.i
+.PHONY : ConsultationForm.cpp.i
+
+ConsultationForm.s: ConsultationForm.cpp.s
+.PHONY : ConsultationForm.s
+
+# target to generate assembly for a file
+ConsultationForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationForm.cpp.s
+.PHONY : ConsultationForm.cpp.s
+
 Hospital_Management_autogen/mocs_compilation.obj: Hospital_Management_autogen/mocs_compilation.cpp.obj
 .PHONY : Hospital_Management_autogen/mocs_compilation.obj
 
@@ -309,6 +333,9 @@ help:
 	@echo ... Hospital_Management_autogen
 	@echo ... Hospital_Management_autogen_timestamp_deps
 	@echo ... Hospital_Management
+	@echo ... ConsultationForm.obj
+	@echo ... ConsultationForm.i
+	@echo ... ConsultationForm.s
 	@echo ... Hospital_Management_autogen/mocs_compilation.obj
 	@echo ... Hospital_Management_autogen/mocs_compilation.i
 	@echo ... Hospital_Management_autogen/mocs_compilation.s

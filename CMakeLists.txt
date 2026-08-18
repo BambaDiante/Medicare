@@ -43,6 +43,7 @@ qt_add_executable(Hospital_Management
     ${PROJECT_SOURCES}
     MedicamentForm.h MedicamentForm.cpp
     PatientForm.h PatientForm.cpp
+    ConsultationForm.h ConsultationForm.cpp
 )
 
 

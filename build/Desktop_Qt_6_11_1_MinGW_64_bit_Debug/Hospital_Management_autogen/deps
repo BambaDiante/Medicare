@@ -633,6 +633,8 @@ Hospital_Management_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Users/ahmad/Documents/Hospital_Management/CMakeLists.txt \
+	C:/Users/ahmad/Documents/Hospital_Management/ConsultationForm.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/ConsultationForm.h \
 	C:/Users/ahmad/Documents/Hospital_Management/MainWindow.cpp \
 	C:/Users/ahmad/Documents/Hospital_Management/MainWindow.h \
 	C:/Users/ahmad/Documents/Hospital_Management/MedecinForm.cpp \

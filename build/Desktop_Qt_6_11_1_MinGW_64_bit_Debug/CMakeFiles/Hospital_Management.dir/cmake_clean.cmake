@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Hospital_Management_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/Hospital_Management_autogen.dir/ParseCache.txt"
   "Hospital_Management_autogen"
+  "CMakeFiles/Hospital_Management.dir/ConsultationForm.cpp.obj"
+  "CMakeFiles/Hospital_Management.dir/ConsultationForm.cpp.obj.d"
   "CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/Hospital_Management.dir/MainWindow.cpp.obj"

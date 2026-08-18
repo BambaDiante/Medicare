@@ -388,6 +388,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ConsultationForm.h",
+			"MU",
+			"EWIEGA46WW/moc_ConsultationForm.cpp",
+			null
+		],
+		[
 			"C:/Users/ahmad/Documents/Hospital_Management/MainWindow.h",
 			"MU",
 			"EWIEGA46WW/moc_MainWindow.cpp",
@@ -485,6 +491,11 @@
 	"SETTINGS_FILE" : "C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/Hospital_Management_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ConsultationForm.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/ahmad/Documents/Hospital_Management/MainWindow.cpp",
 			"MU",
