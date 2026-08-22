@@ -1,5 +1,6 @@
 C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/EWIEGA46WW/moc_MainWindow.cpp: C:/Users/ahmad/Documents/Hospital_Management/MainWindow.h \
   C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/moc_predefs.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QEvent \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \
@@ -9,6 +10,7 @@ C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bi
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20utility.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q23type_traits.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qalloc.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qanystringview.h \
@@ -19,6 +21,7 @@ C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bi
   C:/Qt/6.11.1/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -36,10 +39,13 @@ C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bi
   C:/Qt/6.11.1/mingw_64/include/QtCore/qcontainerinfo.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qcontiguouscache.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qcoreevent.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qdebug.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qendian.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qfloat16.h \

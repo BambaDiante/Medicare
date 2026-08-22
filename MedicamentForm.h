@@ -17,6 +17,11 @@ public:
 
     explicit MedicamentForm(QWidget *parent = nullptr);
 
+signals:
+
+    // Émis après l'ajout réussi d'un médicament
+    void medicamentAjoute();
+
 private slots:
 
     void ajouterMedicament();

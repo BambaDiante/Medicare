@@ -399,9 +399,15 @@ CMakeFiles/Hospital_Management.dir/MainWindow.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtextdocument.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qurl.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
- C:\Users\ahmad\Documents\Hospital_Management\MedecinForm.h \
- C:\Users\ahmad\Documents\Hospital_Management\MedicamentForm.h \
- C:\Users\ahmad\Documents\Hospital_Management\PatientForm.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QEvent \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qcoreevent.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qbasictimer.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qeventloop.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qdeadlinetimer.h \
+ C:\Users\ahmad\Documents\Hospital_Management\MedecinHubForm.h \
+ C:\Users\ahmad\Documents\Hospital_Management\MedicamentHubForm.h \
+ C:\Users\ahmad\Documents\Hospital_Management\PatientHubForm.h \
  C:\Users\ahmad\Documents\Hospital_Management\ConsultationForm.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qboxlayout.h \

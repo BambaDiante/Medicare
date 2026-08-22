@@ -1,4 +1,5 @@
 Hospital_Management_autogen/timestamp: \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/QEvent \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \
@@ -8,6 +9,7 @@ Hospital_Management_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20utility.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q23type_traits.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q23utility.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qalgorithms.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qalloc.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qanystringview.h \
@@ -18,6 +20,7 @@ Hospital_Management_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qatomic.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qatomic_cxx11.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qbasicatomic.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qbasictimer.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qbindingstorage.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qbytearray.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -35,10 +38,13 @@ Hospital_Management_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qcontainerinfo.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qcontainertools_impl.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qcontiguouscache.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qcoreevent.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qdarwinhelpers.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qdatastream.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qdeadlinetimer.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qdebug.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qendian.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qeventloop.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qexceptionhandling.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qflags.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qfloat16.h \
@@ -157,12 +163,14 @@ Hospital_Management_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtGui/qtransform.h \
 	C:/Qt/6.11.1/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.11.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+	C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/QLabel \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/QPushButton \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/QStackedWidget \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+	C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/qframe.h \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlabel.h \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -632,17 +640,43 @@ Hospital_Management_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+	C:/Users/ahmad/Documents/Hospital_Management/AjoutPatientForm.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/AjoutPatientForm.h \
 	C:/Users/ahmad/Documents/Hospital_Management/CMakeLists.txt \
 	C:/Users/ahmad/Documents/Hospital_Management/ConsultationForm.cpp \
 	C:/Users/ahmad/Documents/Hospital_Management/ConsultationForm.h \
+	C:/Users/ahmad/Documents/Hospital_Management/ConsultationMedecin.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/ConsultationMedecin.h \
+	C:/Users/ahmad/Documents/Hospital_Management/ConsultationPatient.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/ConsultationPatient.h \
+	C:/Users/ahmad/Documents/Hospital_Management/DetailConsultation.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/DetailConsultation.h \
+	C:/Users/ahmad/Documents/Hospital_Management/LoginForm.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/LoginForm.h \
 	C:/Users/ahmad/Documents/Hospital_Management/MainWindow.cpp \
 	C:/Users/ahmad/Documents/Hospital_Management/MainWindow.h \
 	C:/Users/ahmad/Documents/Hospital_Management/MedecinForm.cpp \
 	C:/Users/ahmad/Documents/Hospital_Management/MedecinForm.h \
+	C:/Users/ahmad/Documents/Hospital_Management/MedecinHubForm.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/MedecinHubForm.h \
+	C:/Users/ahmad/Documents/Hospital_Management/MedecinListeForm.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/MedecinListeForm.h \
 	C:/Users/ahmad/Documents/Hospital_Management/MedicamentForm.cpp \
 	C:/Users/ahmad/Documents/Hospital_Management/MedicamentForm.h \
+	C:/Users/ahmad/Documents/Hospital_Management/MedicamentHubForm.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/MedicamentHubForm.h \
+	C:/Users/ahmad/Documents/Hospital_Management/MedicamentListeForm.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/MedicamentListeForm.h \
+	C:/Users/ahmad/Documents/Hospital_Management/ModifierMedecin.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/ModifierMedecin.h \
+	C:/Users/ahmad/Documents/Hospital_Management/ModifierMedicament.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/ModifierMedicament.h \
+	C:/Users/ahmad/Documents/Hospital_Management/ModifierPatient.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/ModifierPatient.h \
 	C:/Users/ahmad/Documents/Hospital_Management/PatientForm.cpp \
 	C:/Users/ahmad/Documents/Hospital_Management/PatientForm.h \
+	C:/Users/ahmad/Documents/Hospital_Management/PatientHubForm.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/PatientHubForm.h \
 	C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
 	C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/package-manager.cmake \
 	C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake \
@@ -651,4 +685,5 @@ Hospital_Management_autogen/timestamp: \
 	C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/moc_predefs.h \
 	C:/Users/ahmad/Documents/Hospital_Management/main.cpp \
+	C:/Users/ahmad/Documents/Hospital_Management/resources.qrc \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

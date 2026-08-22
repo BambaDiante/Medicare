@@ -44,6 +44,23 @@ qt_add_executable(Hospital_Management
     MedicamentForm.h MedicamentForm.cpp
     PatientForm.h PatientForm.cpp
     ConsultationForm.h ConsultationForm.cpp
+    ConsultationMedecin.h ConsultationMedecin.cpp
+    ConsultationPatient.h ConsultationPatient.cpp
+    DetailConsultation.h DetailConsultation.cpp
+    MedecinHubForm.h MedecinHubForm.cpp
+    MedecinListeForm.h MedecinListeForm.cpp
+    MedicamentHubForm.h MedicamentHubForm.cpp
+    MedicamentListeForm.h MedicamentListeForm.cpp
+    PatientHubForm.h PatientHubForm.cpp
+    ModifierMedecin.h ModifierMedecin.cpp
+    ModifierMedicament.h ModifierMedicament.cpp
+    ModifierPatient.h ModifierPatient.cpp
+    AjoutPatientForm.h AjoutPatientForm.cpp
+    LoginForm.h LoginForm.cpp
+
+    style.qss
+    resources.qrc
+
 )
 
 

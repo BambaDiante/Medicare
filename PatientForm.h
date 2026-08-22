@@ -1,35 +1,40 @@
 #ifndef PATIENTFORM_H
 #define PATIENTFORM_H
+
 #include <QWidget>
 
-class QLabel;
-class QLineEdit;
-class QGridLayout;
+class QTableWidget;
 class QPushButton;
+class QLineEdit;
+
 class PatientForm : public QWidget
 {
     Q_OBJECT
+
 public:
+
     explicit PatientForm(QWidget *parent = nullptr);
+
+public slots:
+
+    void chargerPatients();
 
 private slots:
 
-    void validerFormulaire();
+    void voirConsultations();
+    void filtrerPatients(const QString &texte);
+    void modifierPatient();
+    void supprimerPatient();
 
 private:
 
-    QLabel *titre;
+    QLineEdit *rechercheEdit;
 
-    QLabel *nameLabel;
-    QLineEdit *nameLineEdit;
+    QTableWidget *tablePatients;
 
-    QLabel *numeroLabel;
-    QLineEdit *numeroLineEdit;
-
-    QGridLayout *gridLayout;
-    QPushButton *valider;
-
-
+    QPushButton *voirConsultationsButton;
+    QPushButton *modifierButton;
+    QPushButton *supprimerButton;
 };
 
 #endif // PATIENTFORM_H

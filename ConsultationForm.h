@@ -20,6 +20,10 @@ class ConsultationForm : public QWidget
 public:
     explicit ConsultationForm(QWidget *parent = nullptr);
 
+    // Recharge les 3 listes déroulantes (médecins, patients, médicaments)
+    // À appeler à chaque ouverture de la page, pour voir les ajouts récents
+    void actualiserListes();
+
 private slots:
     void ajouterMedicamentALaListe();
     void retirerMedicamentDeLaListe();
@@ -30,6 +34,9 @@ private:
     void chargerMedecins();
     void chargerPatients();
     void chargerMedicaments();
+
+    // Transforme un QComboBox en barre de recherche
+    void configurerRecherche(QComboBox *combo, const QString &texteIndicatif);
 
     // Contrôles
     bool medicamentDejaDansListe(const QString &code) const;

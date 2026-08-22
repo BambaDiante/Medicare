@@ -11,6 +11,9 @@
 #include <QPushButton>
 #include <QMessageBox>
 #include <QDate>
+#include <QCompleter>
+#include <QLineEdit>
+#include <QAbstractItemView>
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -18,6 +21,8 @@
 #include <QSqlRecord>
 #include <QDebug>
 
+// Nom de la connexion ouverte dans main.cpp :
+//   QSqlDatabase::addDatabase("QMYSQL", "hospital_connection");
 static const char *CONNEXION_BD = "hospital_connection";
 
 ConsultationForm::ConsultationForm(QWidget *parent)
@@ -28,7 +33,7 @@ ConsultationForm::ConsultationForm(QWidget *parent)
     titre = new QLabel("Ajouter une consultation");
     titre->setAlignment(Qt::AlignCenter);
 
-
+    // --- Date ---
     dateLabel = new QLabel("&Date :");
     dateEdit = new QDateEdit(QDate::currentDate());
     dateEdit->setCalendarPopup(true);
@@ -36,22 +41,23 @@ ConsultationForm::ConsultationForm(QWidget *parent)
     dateEdit->setMaximumDate(QDate::currentDate());
     dateLabel->setBuddy(dateEdit);
 
+    // --- Médecin ---
     medecinLabel = new QLabel("&Médecin :");
     medecinCombo = new QComboBox();
     medecinLabel->setBuddy(medecinCombo);
 
-
+    // --- Patient ---
     patientLabel = new QLabel("&Patient :");
     patientCombo = new QComboBox();
     patientLabel->setBuddy(patientCombo);
 
-
+    // --- Motif ---
     motifLabel = new QLabel("&Motif :");
     motifEdit = new QTextEdit();
     motifEdit->setMaximumHeight(80);
     motifLabel->setBuddy(motifEdit);
 
-
+    // --- Ajout d'un médicament à la liste ---
     medicamentLabel = new QLabel("&Médicament :");
     medicamentCombo = new QComboBox();
     medicamentLabel->setBuddy(medicamentCombo);
@@ -63,7 +69,7 @@ ConsultationForm::ConsultationForm(QWidget *parent)
 
     ajouterMedicamentButton = new QPushButton("Ajouter le médicament");
 
-
+    // --- Tableau des médicaments prescrits ---
     medicamentsTable = new QTableWidget(0, 3);
     medicamentsTable->setHorizontalHeaderLabels({"Code", "Médicament", "Durée (jours)"});
     medicamentsTable->horizontalHeader()->setSectionResizeMode(1, QHeaderView::Stretch);
@@ -81,7 +87,9 @@ ConsultationForm::ConsultationForm(QWidget *parent)
     // --- Bouton de validation ---
     valider = new QPushButton("Enregistrer la consultation");
 
-
+    // =========================================
+    // Disposition
+    // =========================================
     int row = 0;
     gridLayout->addWidget(titre, row, 0, 1, 2);
     row++;
@@ -124,7 +132,9 @@ ConsultationForm::ConsultationForm(QWidget *parent)
 
     gridLayout->addWidget(valider, row, 0, 1, 2);
 
-    //connexion des boutons en slots
+    // =========================================
+    // Connexion des boutons en slots
+    // =========================================
     connect(
         ajouterMedicamentButton,
         &QPushButton::clicked,
@@ -146,23 +156,49 @@ ConsultationForm::ConsultationForm(QWidget *parent)
         &ConsultationForm::enregistrerConsultation
         );
 
-    //chargement des donnees
+    // =========================================
+    // Chargement des données depuis la base
+    // =========================================
     chargerMedecins();
     chargerPatients();
     chargerMedicaments();
+
+    // Transformation des combos en barres de recherche (on tape, la liste
+    // se filtre, on clique sur l'élément voulu dans la liste déroulante).
+    configurerRecherche(medecinCombo, "Rechercher un médecin...");
+    configurerRecherche(patientCombo, "Rechercher un patient...");
+    configurerRecherche(medicamentCombo, "Rechercher un médicament...");
 }
 
-//Trouve la vrai colonne dans le liste des candidats
+// ---------------------------------------------------------------------------
+// Recharge les 3 listes déroulantes (à appeler à chaque ouverture de la page)
+// ---------------------------------------------------------------------------
+void ConsultationForm::actualiserListes()
+{
+    chargerMedecins();
+    chargerPatients();
+    chargerMedicaments();
+
+    // On reconfigure la recherche, car chargerX() vide puis
+    // reremplit le combo, ce qui peut affecter le completer.
+    configurerRecherche(medecinCombo, "Rechercher un médecin...");
+    configurerRecherche(patientCombo, "Rechercher un patient...");
+    configurerRecherche(medicamentCombo, "Rechercher un médicament...");
+}
+
+// ---------------------------------------------------------------------------
+// Utilitaire : trouve la vraie colonne parmi une liste de noms candidats
+// ---------------------------------------------------------------------------
 QString ConsultationForm::colonneCorrespondante(const QSqlRecord &rec, const QStringList &candidats)
 {
-
+    // 1) correspondance exacte (insensible à la casse)
     for (const QString &c : candidats)
     {
         int idx = rec.indexOf(c);
         if (idx >= 0)
             return rec.fieldName(idx);
     }
-
+    // 2) correspondance partielle (le nom de colonne contient le mot-clé)
     for (int i = 0; i < rec.count(); ++i)
     {
         const QString champ = rec.fieldName(i).toLower();
@@ -175,7 +211,32 @@ QString ConsultationForm::colonneCorrespondante(const QSqlRecord &rec, const QSt
     return QString();
 }
 
-//chargement des liste deroulantes
+// ---------------------------------------------------------------------------
+// Transforme un QComboBox en barre de recherche
+// ---------------------------------------------------------------------------
+void ConsultationForm::configurerRecherche(QComboBox *combo, const QString &texteIndicatif)
+{
+    // Rend le combo éditable : on peut taper du texte comme dans une barre
+    // de recherche, sans pour autant pouvoir créer de nouvel élément.
+    combo->setEditable(true);
+    combo->setInsertPolicy(QComboBox::NoInsert);
+    combo->setCurrentIndex(-1);
+    combo->lineEdit()->clear();
+    combo->lineEdit()->setPlaceholderText(texteIndicatif);
+
+    // Le complétion utilise le même modèle que le combo : sélectionner une
+    // suggestion dans la liste déroulante met bien à jour currentIndex()/
+    // currentData(), pas seulement le texte affiché.
+    QCompleter *completer = new QCompleter(combo->model(), combo);
+    completer->setCaseSensitivity(Qt::CaseInsensitive);
+    completer->setFilterMode(Qt::MatchContains);
+    completer->setCompletionMode(QCompleter::PopupCompletion);
+    combo->setCompleter(completer);
+}
+
+// ---------------------------------------------------------------------------
+// Chargement des listes déroulantes
+// ---------------------------------------------------------------------------
 void ConsultationForm::chargerMedecins()
 {
     medecinCombo->clear();
@@ -238,7 +299,9 @@ void ConsultationForm::chargerPatients()
     }
 
     QSqlRecord rec = query.record();
-
+    // Le schéma de la table "consulte" référence "Patient_Num_ss", mais le
+    // formulaire patient existant insère dans une colonne "Numero" : on
+    // accepte les deux noms pour rester compatible avec votre table réelle.
     QString colId  = colonneCorrespondante(rec, {"Num_ss", "NumSS", "NSS", "Numero"});
     QString colNom = colonneCorrespondante(rec, {"Nom"});
 
@@ -303,7 +366,9 @@ void ConsultationForm::chargerMedicaments()
         erreurLabel->setText("Aucun médicament trouvé. Ajoutez d'abord un médicament.");
 }
 
-
+// ---------------------------------------------------------------------------
+// Gestion de la liste des médicaments prescrits (tableau)
+// ---------------------------------------------------------------------------
 bool ConsultationForm::medicamentDejaDansListe(const QString &code) const
 {
     for (int row = 0; row < medicamentsTable->rowCount(); ++row)
@@ -360,7 +425,10 @@ void ConsultationForm::retirerMedicamentDeLaListe()
     medicamentsTable->removeRow(row);
     erreurLabel->clear();
 }
-//acces a la base de donnnees
+
+// ---------------------------------------------------------------------------
+// Accès base de données
+// ---------------------------------------------------------------------------
 bool ConsultationForm::consultationAColonneMotif() const
 {
     QSqlDatabase db = QSqlDatabase::database(CONNEXION_BD);
@@ -407,12 +475,16 @@ int ConsultationForm::prochainNumeroConsultation(bool &ok)
     return -1;
 }
 
-
+// ---------------------------------------------------------------------------
+// Enregistrement
+// ---------------------------------------------------------------------------
 void ConsultationForm::enregistrerConsultation()
 {
     erreurLabel->clear();
 
-
+    // =========================================
+    // Contrôles
+    // =========================================
     if (medecinCombo->count() == 0 || medecinCombo->currentIndex() < 0)
     {
         QMessageBox::warning(this, "Erreur", "Veuillez sélectionner un médecin.");
@@ -450,7 +522,9 @@ void ConsultationForm::enregistrerConsultation()
             return;
     }
 
-
+    // =========================================
+    // Connexion
+    // =========================================
     QSqlDatabase db = QSqlDatabase::database(CONNEXION_BD);
     if (!db.isOpen())
     {
@@ -468,7 +542,7 @@ void ConsultationForm::enregistrerConsultation()
         return;
     }
 
-
+    // 1) S'assurer que le médecin et le patient sont liés (table consulte)
     QString erreur;
     if (!assurerRelationMedecinPatient(matricule, numSS, erreur))
     {
@@ -477,7 +551,7 @@ void ConsultationForm::enregistrerConsultation()
         return;
     }
 
-
+    // 2) Déterminer le prochain numéro de consultation
     bool ok = false;
     int numero = prochainNumeroConsultation(ok);
     if (!ok)
@@ -487,28 +561,18 @@ void ConsultationForm::enregistrerConsultation()
         return;
     }
 
-
-    bool avecMotif = consultationAColonneMotif();
+    // 3) Insertion de la consultation (avec motif, colonne désormais ajoutée à la table)
     QSqlQuery insertConsultation(db);
-    if (avecMotif)
-    {
-        insertConsultation.prepare(
-            "INSERT INTO consultation "
-            "(Numero, date, motif, Medecin_has_Patient_Medecin_Matricule, Medecin_has_Patient_Patient_Num_ss) "
-            "VALUES (:numero, :date, :motif, :matricule, :numss)"
-            );
-        insertConsultation.bindValue(":motif", motifEdit->toPlainText().trimmed());
-    }
-    else
-    {
-        insertConsultation.prepare(
-            "INSERT INTO consultation "
-            "(Numero, date, Medecin_has_Patient_Medecin_Matricule, Medecin_has_Patient_Patient_Num_ss) "
-            "VALUES (:numero, :date, :matricule, :numss)"
-            );
-    }
+
+    insertConsultation.prepare(
+        "INSERT INTO consultation "
+        "(Numero, date, motif, Medecin_has_Patient_Medecin_Matricule, Medecin_has_Patient_Patient_Num_ss) "
+        "VALUES (:numero, :date, :motif, :matricule, :numss)"
+        );
+
     insertConsultation.bindValue(":numero", numero);
     insertConsultation.bindValue(":date", dateEdit->date().toString("yyyy-MM-dd"));
+    insertConsultation.bindValue(":motif", motifEdit->toPlainText().trimmed());
     insertConsultation.bindValue(":matricule", matricule);
     insertConsultation.bindValue(":numss", numSS);
 
@@ -521,7 +585,7 @@ void ConsultationForm::enregistrerConsultation()
         return;
     }
 
-
+    // 4) Insertion des médicaments prescrits
     for (int row = 0; row < medicamentsTable->rowCount(); ++row)
     {
         QString code = medicamentsTable->item(row, 0)->text();
@@ -555,13 +619,9 @@ void ConsultationForm::enregistrerConsultation()
         return;
     }
 
-    if (!avecMotif && !motifEdit->toPlainText().trimmed().isEmpty())
-    {
-        qDebug() << "ConsultationForm : la colonne 'motif' n'existe pas dans la table 'consultation' ; "
-                    "le motif saisi n'a pas été enregistré.";
-    }
-
-
+    // =========================================
+    // Succès
+    // =========================================
     QMessageBox::information(this, "Succès",
                              QString("Consultation n°%1 enregistrée avec succès.").arg(numero));
 
@@ -575,7 +635,8 @@ void ConsultationForm::reinitialiserFormulaire()
     medicamentsTable->setRowCount(0);
     erreurLabel->clear();
 
-
+    // On recharge les combos au cas où de nouveaux médecins/patients/
+    // médicaments auraient été ajoutés entre-temps.
     chargerMedecins();
     chargerPatients();
     chargerMedicaments();

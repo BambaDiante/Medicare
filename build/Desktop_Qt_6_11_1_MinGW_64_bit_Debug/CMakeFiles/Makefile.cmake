@@ -259,6 +259,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeRCCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeSystem.cmake"
+  "C:/Users/ahmad/Documents/Hospital_Management/resources.qrc"
   )
 
 # The corresponding makefile is:
@@ -271,6 +272,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "Hospital_Management.exe.manifest"
   "CMakeFiles/Hospital_Management_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/Hospital_Management_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json"
   ".qt/QtDeploySupport.cmake"
   ".qt/QtDeployTargets.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"

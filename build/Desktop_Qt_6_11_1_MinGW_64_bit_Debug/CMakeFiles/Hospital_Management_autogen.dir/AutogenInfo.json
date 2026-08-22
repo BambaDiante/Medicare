@@ -379,7 +379,8 @@
 		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
-		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/windows/app.exe.manifest.in"
+		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/windows/app.exe.manifest.in",
+		"C:/Users/ahmad/Documents/Hospital_Management/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/ahmad/Documents/Hospital_Management",
 	"CROSS_CONFIG" : false,
@@ -388,9 +389,39 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/ahmad/Documents/Hospital_Management/AjoutPatientForm.h",
+			"MU",
+			"EWIEGA46WW/moc_AjoutPatientForm.cpp",
+			null
+		],
+		[
 			"C:/Users/ahmad/Documents/Hospital_Management/ConsultationForm.h",
 			"MU",
 			"EWIEGA46WW/moc_ConsultationForm.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ConsultationMedecin.h",
+			"MU",
+			"EWIEGA46WW/moc_ConsultationMedecin.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ConsultationPatient.h",
+			"MU",
+			"EWIEGA46WW/moc_ConsultationPatient.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/DetailConsultation.h",
+			"MU",
+			"EWIEGA46WW/moc_DetailConsultation.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/LoginForm.h",
+			"MU",
+			"EWIEGA46WW/moc_LoginForm.cpp",
 			null
 		],
 		[
@@ -406,15 +437,63 @@
 			null
 		],
 		[
+			"C:/Users/ahmad/Documents/Hospital_Management/MedecinHubForm.h",
+			"MU",
+			"EWIEGA46WW/moc_MedecinHubForm.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/MedecinListeForm.h",
+			"MU",
+			"EWIEGA46WW/moc_MedecinListeForm.cpp",
+			null
+		],
+		[
 			"C:/Users/ahmad/Documents/Hospital_Management/MedicamentForm.h",
 			"MU",
 			"EWIEGA46WW/moc_MedicamentForm.cpp",
 			null
 		],
 		[
+			"C:/Users/ahmad/Documents/Hospital_Management/MedicamentHubForm.h",
+			"MU",
+			"EWIEGA46WW/moc_MedicamentHubForm.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/MedicamentListeForm.h",
+			"MU",
+			"EWIEGA46WW/moc_MedicamentListeForm.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ModifierMedecin.h",
+			"MU",
+			"EWIEGA46WW/moc_ModifierMedecin.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ModifierMedicament.h",
+			"MU",
+			"EWIEGA46WW/moc_ModifierMedicament.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ModifierPatient.h",
+			"MU",
+			"EWIEGA46WW/moc_ModifierPatient.cpp",
+			null
+		],
+		[
 			"C:/Users/ahmad/Documents/Hospital_Management/PatientForm.h",
 			"MU",
 			"EWIEGA46WW/moc_PatientForm.cpp",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/PatientHubForm.h",
+			"MU",
+			"EWIEGA46WW/moc_PatientHubForm.cpp",
 			null
 		]
 	],
@@ -492,7 +571,32 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/ahmad/Documents/Hospital_Management/AjoutPatientForm.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/ahmad/Documents/Hospital_Management/ConsultationForm.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ConsultationMedecin.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ConsultationPatient.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/DetailConsultation.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/LoginForm.cpp",
 			"MU",
 			null
 		],
@@ -507,12 +611,52 @@
 			null
 		],
 		[
+			"C:/Users/ahmad/Documents/Hospital_Management/MedecinHubForm.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/MedecinListeForm.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/ahmad/Documents/Hospital_Management/MedicamentForm.cpp",
 			"MU",
 			null
 		],
 		[
+			"C:/Users/ahmad/Documents/Hospital_Management/MedicamentHubForm.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/MedicamentListeForm.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ModifierMedecin.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ModifierMedicament.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/ModifierPatient.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/ahmad/Documents/Hospital_Management/PatientForm.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ahmad/Documents/Hospital_Management/PatientHubForm.cpp",
 			"MU",
 			null
 		],

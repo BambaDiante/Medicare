@@ -440,6 +440,11 @@ CMakeFiles/Hospital_Management.dir/ConsultationForm.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QDate \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QCompleter \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qcompleter.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QLineEdit \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlineedit.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QAbstractItemView \
  C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlDatabase \
  C:/Qt/6.11.1/mingw_64/include/QtSql/qsqldatabase.h \
  C:/Qt/6.11.1/mingw_64/include/QtSql/qtsqlglobal.h \

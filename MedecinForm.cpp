@@ -56,7 +56,7 @@ MedecinForm::MedecinForm(QWidget *parent)
     matriculeLabel->setBuddy(matriculeLineEdit);
 
 
-//bouton
+    //bouton
 
     valider =
         new QPushButton("Valider");
@@ -155,7 +155,7 @@ void MedecinForm::validerFormulaire()
         return;
     }
 
-//COnnexion
+    //COnnexion
 
     QSqlDatabase db =
         QSqlDatabase::database(
@@ -231,6 +231,8 @@ void MedecinForm::validerFormulaire()
         "Succès",
         "Le médecin a été enregistré avec succès."
         );
+
+    emit medecinAjoute();
 
 
     // =========================================

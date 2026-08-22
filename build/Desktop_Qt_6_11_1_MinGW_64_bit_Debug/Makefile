@@ -154,6 +154,30 @@ Hospital_Management_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management_autogen.dir\build.make CMakeFiles/Hospital_Management_autogen.dir/build
 .PHONY : Hospital_Management_autogen/fast
 
+AjoutPatientForm.obj: AjoutPatientForm.cpp.obj
+.PHONY : AjoutPatientForm.obj
+
+# target to build an object file
+AjoutPatientForm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/AjoutPatientForm.cpp.obj
+.PHONY : AjoutPatientForm.cpp.obj
+
+AjoutPatientForm.i: AjoutPatientForm.cpp.i
+.PHONY : AjoutPatientForm.i
+
+# target to preprocess a source file
+AjoutPatientForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/AjoutPatientForm.cpp.i
+.PHONY : AjoutPatientForm.cpp.i
+
+AjoutPatientForm.s: AjoutPatientForm.cpp.s
+.PHONY : AjoutPatientForm.s
+
+# target to generate assembly for a file
+AjoutPatientForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/AjoutPatientForm.cpp.s
+.PHONY : AjoutPatientForm.cpp.s
+
 ConsultationForm.obj: ConsultationForm.cpp.obj
 .PHONY : ConsultationForm.obj
 
@@ -178,6 +202,102 @@ ConsultationForm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationForm.cpp.s
 .PHONY : ConsultationForm.cpp.s
 
+ConsultationMedecin.obj: ConsultationMedecin.cpp.obj
+.PHONY : ConsultationMedecin.obj
+
+# target to build an object file
+ConsultationMedecin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationMedecin.cpp.obj
+.PHONY : ConsultationMedecin.cpp.obj
+
+ConsultationMedecin.i: ConsultationMedecin.cpp.i
+.PHONY : ConsultationMedecin.i
+
+# target to preprocess a source file
+ConsultationMedecin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationMedecin.cpp.i
+.PHONY : ConsultationMedecin.cpp.i
+
+ConsultationMedecin.s: ConsultationMedecin.cpp.s
+.PHONY : ConsultationMedecin.s
+
+# target to generate assembly for a file
+ConsultationMedecin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationMedecin.cpp.s
+.PHONY : ConsultationMedecin.cpp.s
+
+ConsultationPatient.obj: ConsultationPatient.cpp.obj
+.PHONY : ConsultationPatient.obj
+
+# target to build an object file
+ConsultationPatient.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationPatient.cpp.obj
+.PHONY : ConsultationPatient.cpp.obj
+
+ConsultationPatient.i: ConsultationPatient.cpp.i
+.PHONY : ConsultationPatient.i
+
+# target to preprocess a source file
+ConsultationPatient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationPatient.cpp.i
+.PHONY : ConsultationPatient.cpp.i
+
+ConsultationPatient.s: ConsultationPatient.cpp.s
+.PHONY : ConsultationPatient.s
+
+# target to generate assembly for a file
+ConsultationPatient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ConsultationPatient.cpp.s
+.PHONY : ConsultationPatient.cpp.s
+
+DetailConsultation.obj: DetailConsultation.cpp.obj
+.PHONY : DetailConsultation.obj
+
+# target to build an object file
+DetailConsultation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/DetailConsultation.cpp.obj
+.PHONY : DetailConsultation.cpp.obj
+
+DetailConsultation.i: DetailConsultation.cpp.i
+.PHONY : DetailConsultation.i
+
+# target to preprocess a source file
+DetailConsultation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/DetailConsultation.cpp.i
+.PHONY : DetailConsultation.cpp.i
+
+DetailConsultation.s: DetailConsultation.cpp.s
+.PHONY : DetailConsultation.s
+
+# target to generate assembly for a file
+DetailConsultation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/DetailConsultation.cpp.s
+.PHONY : DetailConsultation.cpp.s
+
+Hospital_Management_autogen/EWIEGA46WW/qrc_resources.obj: Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+.PHONY : Hospital_Management_autogen/EWIEGA46WW/qrc_resources.obj
+
+# target to build an object file
+Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+.PHONY : Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+
+Hospital_Management_autogen/EWIEGA46WW/qrc_resources.i: Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : Hospital_Management_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+Hospital_Management_autogen/EWIEGA46WW/qrc_resources.s: Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : Hospital_Management_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 Hospital_Management_autogen/mocs_compilation.obj: Hospital_Management_autogen/mocs_compilation.cpp.obj
 .PHONY : Hospital_Management_autogen/mocs_compilation.obj
 
@@ -201,6 +321,30 @@ Hospital_Management_autogen/mocs_compilation.s: Hospital_Management_autogen/mocs
 Hospital_Management_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/mocs_compilation.cpp.s
 .PHONY : Hospital_Management_autogen/mocs_compilation.cpp.s
+
+LoginForm.obj: LoginForm.cpp.obj
+.PHONY : LoginForm.obj
+
+# target to build an object file
+LoginForm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/LoginForm.cpp.obj
+.PHONY : LoginForm.cpp.obj
+
+LoginForm.i: LoginForm.cpp.i
+.PHONY : LoginForm.i
+
+# target to preprocess a source file
+LoginForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/LoginForm.cpp.i
+.PHONY : LoginForm.cpp.i
+
+LoginForm.s: LoginForm.cpp.s
+.PHONY : LoginForm.s
+
+# target to generate assembly for a file
+LoginForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/LoginForm.cpp.s
+.PHONY : LoginForm.cpp.s
 
 MainWindow.obj: MainWindow.cpp.obj
 .PHONY : MainWindow.obj
@@ -250,6 +394,54 @@ MedecinForm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedecinForm.cpp.s
 .PHONY : MedecinForm.cpp.s
 
+MedecinHubForm.obj: MedecinHubForm.cpp.obj
+.PHONY : MedecinHubForm.obj
+
+# target to build an object file
+MedecinHubForm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedecinHubForm.cpp.obj
+.PHONY : MedecinHubForm.cpp.obj
+
+MedecinHubForm.i: MedecinHubForm.cpp.i
+.PHONY : MedecinHubForm.i
+
+# target to preprocess a source file
+MedecinHubForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedecinHubForm.cpp.i
+.PHONY : MedecinHubForm.cpp.i
+
+MedecinHubForm.s: MedecinHubForm.cpp.s
+.PHONY : MedecinHubForm.s
+
+# target to generate assembly for a file
+MedecinHubForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedecinHubForm.cpp.s
+.PHONY : MedecinHubForm.cpp.s
+
+MedecinListeForm.obj: MedecinListeForm.cpp.obj
+.PHONY : MedecinListeForm.obj
+
+# target to build an object file
+MedecinListeForm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedecinListeForm.cpp.obj
+.PHONY : MedecinListeForm.cpp.obj
+
+MedecinListeForm.i: MedecinListeForm.cpp.i
+.PHONY : MedecinListeForm.i
+
+# target to preprocess a source file
+MedecinListeForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedecinListeForm.cpp.i
+.PHONY : MedecinListeForm.cpp.i
+
+MedecinListeForm.s: MedecinListeForm.cpp.s
+.PHONY : MedecinListeForm.s
+
+# target to generate assembly for a file
+MedecinListeForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedecinListeForm.cpp.s
+.PHONY : MedecinListeForm.cpp.s
+
 MedicamentForm.obj: MedicamentForm.cpp.obj
 .PHONY : MedicamentForm.obj
 
@@ -274,6 +466,126 @@ MedicamentForm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedicamentForm.cpp.s
 .PHONY : MedicamentForm.cpp.s
 
+MedicamentHubForm.obj: MedicamentHubForm.cpp.obj
+.PHONY : MedicamentHubForm.obj
+
+# target to build an object file
+MedicamentHubForm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedicamentHubForm.cpp.obj
+.PHONY : MedicamentHubForm.cpp.obj
+
+MedicamentHubForm.i: MedicamentHubForm.cpp.i
+.PHONY : MedicamentHubForm.i
+
+# target to preprocess a source file
+MedicamentHubForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedicamentHubForm.cpp.i
+.PHONY : MedicamentHubForm.cpp.i
+
+MedicamentHubForm.s: MedicamentHubForm.cpp.s
+.PHONY : MedicamentHubForm.s
+
+# target to generate assembly for a file
+MedicamentHubForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedicamentHubForm.cpp.s
+.PHONY : MedicamentHubForm.cpp.s
+
+MedicamentListeForm.obj: MedicamentListeForm.cpp.obj
+.PHONY : MedicamentListeForm.obj
+
+# target to build an object file
+MedicamentListeForm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedicamentListeForm.cpp.obj
+.PHONY : MedicamentListeForm.cpp.obj
+
+MedicamentListeForm.i: MedicamentListeForm.cpp.i
+.PHONY : MedicamentListeForm.i
+
+# target to preprocess a source file
+MedicamentListeForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedicamentListeForm.cpp.i
+.PHONY : MedicamentListeForm.cpp.i
+
+MedicamentListeForm.s: MedicamentListeForm.cpp.s
+.PHONY : MedicamentListeForm.s
+
+# target to generate assembly for a file
+MedicamentListeForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/MedicamentListeForm.cpp.s
+.PHONY : MedicamentListeForm.cpp.s
+
+ModifierMedecin.obj: ModifierMedecin.cpp.obj
+.PHONY : ModifierMedecin.obj
+
+# target to build an object file
+ModifierMedecin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ModifierMedecin.cpp.obj
+.PHONY : ModifierMedecin.cpp.obj
+
+ModifierMedecin.i: ModifierMedecin.cpp.i
+.PHONY : ModifierMedecin.i
+
+# target to preprocess a source file
+ModifierMedecin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ModifierMedecin.cpp.i
+.PHONY : ModifierMedecin.cpp.i
+
+ModifierMedecin.s: ModifierMedecin.cpp.s
+.PHONY : ModifierMedecin.s
+
+# target to generate assembly for a file
+ModifierMedecin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ModifierMedecin.cpp.s
+.PHONY : ModifierMedecin.cpp.s
+
+ModifierMedicament.obj: ModifierMedicament.cpp.obj
+.PHONY : ModifierMedicament.obj
+
+# target to build an object file
+ModifierMedicament.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ModifierMedicament.cpp.obj
+.PHONY : ModifierMedicament.cpp.obj
+
+ModifierMedicament.i: ModifierMedicament.cpp.i
+.PHONY : ModifierMedicament.i
+
+# target to preprocess a source file
+ModifierMedicament.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ModifierMedicament.cpp.i
+.PHONY : ModifierMedicament.cpp.i
+
+ModifierMedicament.s: ModifierMedicament.cpp.s
+.PHONY : ModifierMedicament.s
+
+# target to generate assembly for a file
+ModifierMedicament.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ModifierMedicament.cpp.s
+.PHONY : ModifierMedicament.cpp.s
+
+ModifierPatient.obj: ModifierPatient.cpp.obj
+.PHONY : ModifierPatient.obj
+
+# target to build an object file
+ModifierPatient.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ModifierPatient.cpp.obj
+.PHONY : ModifierPatient.cpp.obj
+
+ModifierPatient.i: ModifierPatient.cpp.i
+.PHONY : ModifierPatient.i
+
+# target to preprocess a source file
+ModifierPatient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ModifierPatient.cpp.i
+.PHONY : ModifierPatient.cpp.i
+
+ModifierPatient.s: ModifierPatient.cpp.s
+.PHONY : ModifierPatient.s
+
+# target to generate assembly for a file
+ModifierPatient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/ModifierPatient.cpp.s
+.PHONY : ModifierPatient.cpp.s
+
 PatientForm.obj: PatientForm.cpp.obj
 .PHONY : PatientForm.obj
 
@@ -297,6 +609,30 @@ PatientForm.s: PatientForm.cpp.s
 PatientForm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/PatientForm.cpp.s
 .PHONY : PatientForm.cpp.s
+
+PatientHubForm.obj: PatientHubForm.cpp.obj
+.PHONY : PatientHubForm.obj
+
+# target to build an object file
+PatientHubForm.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/PatientHubForm.cpp.obj
+.PHONY : PatientHubForm.cpp.obj
+
+PatientHubForm.i: PatientHubForm.cpp.i
+.PHONY : PatientHubForm.i
+
+# target to preprocess a source file
+PatientHubForm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/PatientHubForm.cpp.i
+.PHONY : PatientHubForm.cpp.i
+
+PatientHubForm.s: PatientHubForm.cpp.s
+.PHONY : PatientHubForm.s
+
+# target to generate assembly for a file
+PatientHubForm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Hospital_Management.dir\build.make CMakeFiles/Hospital_Management.dir/PatientHubForm.cpp.s
+.PHONY : PatientHubForm.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -333,24 +669,66 @@ help:
 	@echo ... Hospital_Management_autogen
 	@echo ... Hospital_Management_autogen_timestamp_deps
 	@echo ... Hospital_Management
+	@echo ... AjoutPatientForm.obj
+	@echo ... AjoutPatientForm.i
+	@echo ... AjoutPatientForm.s
 	@echo ... ConsultationForm.obj
 	@echo ... ConsultationForm.i
 	@echo ... ConsultationForm.s
+	@echo ... ConsultationMedecin.obj
+	@echo ... ConsultationMedecin.i
+	@echo ... ConsultationMedecin.s
+	@echo ... ConsultationPatient.obj
+	@echo ... ConsultationPatient.i
+	@echo ... ConsultationPatient.s
+	@echo ... DetailConsultation.obj
+	@echo ... DetailConsultation.i
+	@echo ... DetailConsultation.s
+	@echo ... Hospital_Management_autogen/EWIEGA46WW/qrc_resources.obj
+	@echo ... Hospital_Management_autogen/EWIEGA46WW/qrc_resources.i
+	@echo ... Hospital_Management_autogen/EWIEGA46WW/qrc_resources.s
 	@echo ... Hospital_Management_autogen/mocs_compilation.obj
 	@echo ... Hospital_Management_autogen/mocs_compilation.i
 	@echo ... Hospital_Management_autogen/mocs_compilation.s
+	@echo ... LoginForm.obj
+	@echo ... LoginForm.i
+	@echo ... LoginForm.s
 	@echo ... MainWindow.obj
 	@echo ... MainWindow.i
 	@echo ... MainWindow.s
 	@echo ... MedecinForm.obj
 	@echo ... MedecinForm.i
 	@echo ... MedecinForm.s
+	@echo ... MedecinHubForm.obj
+	@echo ... MedecinHubForm.i
+	@echo ... MedecinHubForm.s
+	@echo ... MedecinListeForm.obj
+	@echo ... MedecinListeForm.i
+	@echo ... MedecinListeForm.s
 	@echo ... MedicamentForm.obj
 	@echo ... MedicamentForm.i
 	@echo ... MedicamentForm.s
+	@echo ... MedicamentHubForm.obj
+	@echo ... MedicamentHubForm.i
+	@echo ... MedicamentHubForm.s
+	@echo ... MedicamentListeForm.obj
+	@echo ... MedicamentListeForm.i
+	@echo ... MedicamentListeForm.s
+	@echo ... ModifierMedecin.obj
+	@echo ... ModifierMedecin.i
+	@echo ... ModifierMedecin.s
+	@echo ... ModifierMedicament.obj
+	@echo ... ModifierMedicament.i
+	@echo ... ModifierMedicament.s
+	@echo ... ModifierPatient.obj
+	@echo ... ModifierPatient.i
+	@echo ... ModifierPatient.s
 	@echo ... PatientForm.obj
 	@echo ... PatientForm.i
 	@echo ... PatientForm.s
+	@echo ... PatientHubForm.obj
+	@echo ... PatientHubForm.i
+	@echo ... PatientHubForm.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

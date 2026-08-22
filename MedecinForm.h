@@ -15,6 +15,11 @@ class MedecinForm : public QWidget
 public:
     explicit MedecinForm(QWidget *parent = nullptr);
 
+signals:
+
+    // Émis après l'ajout réussi d'un médecin
+    void medecinAjoute();
+
 private slots:
 
     void validerFormulaire();
@@ -33,5 +38,6 @@ private:
 
     QPushButton *valider;
 };
+
 
 #endif // MEDECINFORM_H

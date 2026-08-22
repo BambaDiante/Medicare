@@ -42,26 +42,23 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "MainWindow",
         "afficherAccueil",
         "",
-        "afficherFormulaireMedecin",
-        "afficherFormulaireMedicament",
-        "afficherFormulairePatient",
-        "afficherFormulaireConsultation",
-        "afficherPatients"
+        "afficherMedecin",
+        "afficherMedicament",
+        "afficherPatient",
+        "afficherFormulaireConsultation"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Slot 'afficherAccueil'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'afficherFormulaireMedecin'
+        // Slot 'afficherMedecin'
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'afficherFormulaireMedicament'
+        // Slot 'afficherMedicament'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'afficherFormulairePatient'
+        // Slot 'afficherPatient'
         QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'afficherFormulaireConsultation'
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'afficherPatients'
-        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -86,11 +83,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->afficherAccueil(); break;
-        case 1: _t->afficherFormulaireMedecin(); break;
-        case 2: _t->afficherFormulaireMedicament(); break;
-        case 3: _t->afficherFormulairePatient(); break;
+        case 1: _t->afficherMedecin(); break;
+        case 2: _t->afficherMedicament(); break;
+        case 3: _t->afficherPatient(); break;
         case 4: _t->afficherFormulaireConsultation(); break;
-        case 5: _t->afficherPatients(); break;
         default: ;
         }
     }
@@ -116,14 +112,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 5;
     }
     return _id;
 }

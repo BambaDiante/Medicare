@@ -146,7 +146,7 @@ MedicamentForm::MedicamentForm(QWidget *parent)
         );
 
 
-   //connexion en slots
+    //connexion en slots
 
     connect(
         ajouterButton,
@@ -192,7 +192,7 @@ void MedicamentForm::ajouterMedicament()
     }
 
 
-  //Connexion a la base de de donnee
+    //Connexion a la base de de donnee
     QSqlDatabase db =
         QSqlDatabase::database(
             "hospital_connection"
@@ -261,13 +261,15 @@ void MedicamentForm::ajouterMedicament()
         return;
     }
 
-//En cas de succes
+    //En cas de succes
 
     QMessageBox::information(
         this,
         "Succès",
         "Le médicament a été ajouté avec succès."
         );
+
+    emit medicamentAjoute();
 
 
     codeEdit->clear();

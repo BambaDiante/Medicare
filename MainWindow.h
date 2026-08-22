@@ -1,61 +1,89 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+
 #include <QMainWindow>
 #include <QStackedWidget>
 #include <QPushButton>
 #include <QLabel>
 #include <QWidget>
-class MedecinForm;
-class MedicamentForm;
-class PatientForm;
+#include <QEvent>
+
+class MedecinHubForm;
+class MedicamentHubForm;
+class PatientHubForm;
 class ConsultationForm;
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override = default;
+
 private:
+
     // =========================================
     // Navigation
     // =========================================
+
     QStackedWidget *stackedWidget;
+
     // =========================================
     // Pages
     // =========================================
+
     QWidget *accueilPage;
-    MedecinForm *medecinForm;
-    MedicamentForm *medicamentForm;
-    PatientForm *patientForm;
+
+    MedecinHubForm *medecinHubForm;
+
+    MedicamentHubForm *medicamentHubForm;
+
+    PatientHubForm *patientHubForm;
+
     ConsultationForm *consultationForm;
-    QWidget *patientsPage;
+
     // =========================================
     // Boutons du menu
     // =========================================
+
     QPushButton *accueilButton;
-    QPushButton *ajouterMedecinButton;
-    QPushButton *ajouterMedicamentButton;
-    QPushButton *ajouterPatientButton;
+
+    QPushButton *medecinButton;
+
+    QPushButton *medicamentButton;
+
+    QPushButton *patientButton;
+
     QPushButton *ajouterConsultationButton;
-    QPushButton *patientsButton;
+
     // =========================================
     // Création du menu
     // =========================================
+
     QWidget *creerMenu();
+
     // =========================================
     // Création des pages
     // =========================================
+
     void creerPageAccueil();
-    void creerPagePatients();
+
 private slots:
+
     // =========================================
     // Navigation
     // =========================================
+
     void afficherAccueil();
-    void afficherFormulaireMedecin();
-    void afficherFormulaireMedicament();
-    void afficherFormulairePatient();
+    void afficherMedecin();
+    void afficherMedicament();
+    void afficherPatient();
     void afficherFormulaireConsultation();
-    void afficherPatients();
+protected:
+    bool eventFilter(QObject *watched, QEvent *event) override;
 };
+
+
+
 #endif // MAINWINDOW_H

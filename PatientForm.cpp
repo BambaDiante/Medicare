@@ -1,156 +1,136 @@
 #include "PatientForm.h"
+#include "ConsultationPatient.h"
+#include "ModifierPatient.h"
 
-#include <QGridLayout>
-#include <QLabel>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
 #include <QLineEdit>
+#include <QTableWidget>
+#include <QTableWidgetItem>
 #include <QPushButton>
-
+#include <QHeaderView>
 #include <QMessageBox>
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
 
-#include <QDebug>
 
 PatientForm::PatientForm(QWidget *parent)
     : QWidget(parent)
 {
 
-
-    gridLayout = new QGridLayout(this);
-
-
+    QVBoxLayout *layout =
+        new QVBoxLayout(this);
 
 
-    titre =
-        new QLabel("Ajouter un Patient");
+    // =========================================
+    // Barre de recherche
+    // =========================================
 
-
-    titre->setAlignment(Qt::AlignCenter);
-
-
-
-    nameLabel =
-        new QLabel("&Nom :");
-
-
-    nameLineEdit =
+    rechercheEdit =
         new QLineEdit();
 
-
-    nameLabel->setBuddy(nameLineEdit);
-
-
-
-
-    numeroLabel =
-        new QLabel("&Numero :");
-
-
-    numeroLineEdit =
-        new QLineEdit();
-
-
-    numeroLabel->setBuddy(numeroLineEdit);
-
-
-    //bouton
-
-    valider =
-        new QPushButton("Valider");
-
-
-
-    gridLayout->addWidget(
-        titre,
-        0,
-        0,
-        1,
-        2
+    rechercheEdit->setPlaceholderText(
+        "Rechercher par numéro SS ou nom..."
         );
 
 
-    gridLayout->addWidget(
-        nameLabel,
-        1,
-        0
+    layout->addWidget(rechercheEdit);
+
+
+    // =========================================
+    // Tableau des patients
+    // =========================================
+
+    tablePatients =
+        new QTableWidget();
+
+
+    tablePatients->setColumnCount(2);
+
+    tablePatients->setHorizontalHeaderLabels(
+        {"Numéro SS", "Nom"}
         );
 
+    tablePatients->horizontalHeader()->setStretchLastSection(true);
 
-    gridLayout->addWidget(
-        nameLineEdit,
-        1,
-        1
-        );
+    tablePatients->setSelectionBehavior(QAbstractItemView::SelectRows);
+    tablePatients->setSelectionMode(QAbstractItemView::SingleSelection);
 
-
-    gridLayout->addWidget(
-        numeroLabel,
-        2,
-        0
-        );
+    tablePatients->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
 
-    gridLayout->addWidget(
-        numeroLineEdit,
-        2,
-        1
-        );
+    layout->addWidget(tablePatients);
 
 
-    gridLayout->addWidget(
-        valider,
-        3,
-        0,
-        1,
-        2
-        );
+    // =========================================
+    // Boutons d'action
+    // =========================================
+
+    QHBoxLayout *boutonsLayout =
+        new QHBoxLayout();
 
 
+    voirConsultationsButton =
+        new QPushButton("Voir les consultations");
+
+    modifierButton =
+        new QPushButton("Modifier");
+
+    supprimerButton =
+        new QPushButton("Supprimer");
+
+
+    boutonsLayout->addWidget(voirConsultationsButton);
+    boutonsLayout->addWidget(modifierButton);
+    boutonsLayout->addWidget(supprimerButton);
+
+
+    layout->addLayout(boutonsLayout);
+
+
+    // =========================================
+    // Connexions
+    // =========================================
 
     connect(
-        valider,
+        voirConsultationsButton,
         &QPushButton::clicked,
         this,
-        &PatientForm::validerFormulaire
+        &PatientForm::voirConsultations
         );
+
+    connect(
+        modifierButton,
+        &QPushButton::clicked,
+        this,
+        &PatientForm::modifierPatient
+        );
+
+    connect(
+        supprimerButton,
+        &QPushButton::clicked,
+        this,
+        &PatientForm::supprimerPatient
+        );
+
+    connect(
+        rechercheEdit,
+        &QLineEdit::textChanged,
+        this,
+        &PatientForm::filtrerPatients
+        );
+
+
+    chargerPatients();
 }
-void PatientForm::validerFormulaire()
+
+
+void PatientForm::chargerPatients()
 {
-    QString nom =
-        nameLineEdit->text().trimmed();
+    tablePatients->setRowCount(0);
 
-
-    QString numero =
-        numeroLineEdit->text().trimmed();
-
-
-
-    if (nom.isEmpty())
-    {
-        QMessageBox::warning(
-            this,
-            "Erreur",
-            "Le nom est obligatoire."
-            );
-
-        return;
-    }
-
-
-    if (numero.isEmpty())
-    {
-        QMessageBox::warning(
-            this,
-            "Erreur",
-            "Le numero est obligatoire."
-            );
-
-        return;
-    }
-
-    //COnnexion
 
     QSqlDatabase db =
         QSqlDatabase::database(
@@ -171,73 +151,249 @@ void PatientForm::validerFormulaire()
     }
 
 
-    // =========================================
-    // Requête
-    // =========================================
-
     QSqlQuery query(db);
 
 
     query.prepare(
-        "INSERT INTO patient "
-        "(Nom, Numero) "
-        "VALUES (:nom, :num)"
+        "SELECT Num_ss, Nom FROM Patient"
         );
 
-
-    query.bindValue(
-        ":nom",
-        nom
-        );
-
-
-    query.bindValue(
-        ":num",
-        numero
-        );
-
-
-    // =========================================
-    // Exécution
-    // =========================================
 
     if (!query.exec())
     {
         QMessageBox::critical(
             this,
             "Erreur",
-            "Impossible d'enregistrer le patient.\n\n"
+            "Impossible de charger les patients.\n\n"
                 + query.lastError().text()
             );
-
-        qDebug()
-            << query.lastError().text();
 
         return;
     }
 
 
+    int row = 0;
+
+
+    while (query.next())
+    {
+        tablePatients->insertRow(row);
+
+        tablePatients->setItem(
+            row,
+            0,
+            new QTableWidgetItem(query.value(0).toString())
+            );
+
+        tablePatients->setItem(
+            row,
+            1,
+            new QTableWidgetItem(query.value(1).toString())
+            );
+
+        row++;
+    }
+}
+
+
+void PatientForm::filtrerPatients(const QString &texte)
+{
+    for (int row = 0; row < tablePatients->rowCount(); row++)
+    {
+        QString numSs =
+            tablePatients->item(row, 0)->text();
+
+        QString nom =
+            tablePatients->item(row, 1)->text();
+
+        bool correspond =
+            numSs.contains(texte, Qt::CaseInsensitive)
+            || nom.contains(texte, Qt::CaseInsensitive);
+
+        tablePatients->setRowHidden(row, !correspond);
+    }
+}
+
+
+void PatientForm::voirConsultations()
+{
+    int row =
+        tablePatients->currentRow();
+
+
+    if (row < 0)
+    {
+        QMessageBox::warning(
+            this,
+            "Attention",
+            "Veuillez sélectionner un patient."
+            );
+
+        return;
+    }
+
+    if (tablePatients->isRowHidden(row))
+    {
+        QMessageBox::warning(
+            this,
+            "Attention",
+            "Veuillez sélectionner un patient visible dans le tableau."
+            );
+
+        return;
+    }
+
+
+    int numSs =
+        tablePatients->item(row, 0)->text().toInt();
+
+    QString nomPatient =
+        tablePatients->item(row, 1)->text();
+
+
+    ConsultationPatient dialog(numSs, nomPatient, this);
+
+    dialog.exec();
+}
+
+
+void PatientForm::modifierPatient()
+{
+    int row =
+        tablePatients->currentRow();
+
+
+    if (row < 0)
+    {
+        QMessageBox::warning(
+            this,
+            "Attention",
+            "Veuillez sélectionner un patient."
+            );
+
+        return;
+    }
+
+
+    int numSs =
+        tablePatients->item(row, 0)->text().toInt();
+
+    QString nomPatient =
+        tablePatients->item(row, 1)->text();
+
+
+    ModifierPatient dialog(numSs, nomPatient, this);
+
+
+    // Si l'utilisateur a bien enregistré (accept()), on recharge le tableau
+    if (dialog.exec() == QDialog::Accepted)
+    {
+        chargerPatients();
+    }
+}
+
+
+void PatientForm::supprimerPatient()
+{
+    int row =
+        tablePatients->currentRow();
+
+
+    if (row < 0)
+    {
+        QMessageBox::warning(
+            this,
+            "Attention",
+            "Veuillez sélectionner un patient."
+            );
+
+        return;
+    }
+
+
+    int numSs =
+        tablePatients->item(row, 0)->text().toInt();
+
+    QString nomPatient =
+        tablePatients->item(row, 1)->text();
+
+
     // =========================================
-    // Succès
+    // Confirmation avant suppression
     // =========================================
+
+    auto reponse =
+        QMessageBox::question(
+            this,
+            "Confirmer la suppression",
+            "Voulez-vous vraiment supprimer le patient \""
+                + nomPatient + "\" ?\n\n"
+                               "Cette action est irréversible.",
+            QMessageBox::Yes | QMessageBox::No
+            );
+
+    if (reponse == QMessageBox::No)
+    {
+        return;
+    }
+
+
+    // =========================================
+    // Connexion à la base
+    // =========================================
+
+    QSqlDatabase db =
+        QSqlDatabase::database(
+            "hospital_connection"
+            );
+
+
+    if (!db.isOpen())
+    {
+        QMessageBox::critical(
+            this,
+            "Erreur",
+            "La connexion à la base de données "
+            "est fermée."
+            );
+
+        return;
+    }
+
+
+    QSqlQuery query(db);
+
+
+    query.prepare(
+        "DELETE FROM Patient WHERE Num_ss = :numss"
+        );
+
+
+    query.bindValue(
+        ":numss",
+        numSs
+        );
+
+
+    if (!query.exec())
+    {
+        QMessageBox::critical(
+            this,
+            "Erreur",
+            "Impossible de supprimer le patient.\n\n"
+                + query.lastError().text()
+            );
+
+        return;
+    }
+
 
     QMessageBox::information(
         this,
         "Succès",
-        "Le patient a été enregistré avec succès."
+        "Le patient a été supprimé."
         );
 
 
-    // =========================================
-    // Réinitialisation
-    // =========================================
-
-    nameLineEdit->clear();
-
-    numeroLineEdit->clear();
-
-    nameLineEdit->setFocus();
+    chargerPatients();
 }
-
-
-
