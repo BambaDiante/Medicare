@@ -1,6 +1,6 @@
 CMakeFiles/Hospital_Management.dir/LoginForm.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\LoginForm.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\LoginForm.h \
+ C:\Dev\Hospital_Management_System\LoginForm.cpp \
+ C:\Dev\Hospital_Management_System\LoginForm.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

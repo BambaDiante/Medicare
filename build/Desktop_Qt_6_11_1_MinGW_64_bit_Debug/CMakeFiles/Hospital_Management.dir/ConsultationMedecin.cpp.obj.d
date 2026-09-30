@@ -1,6 +1,6 @@
 CMakeFiles/Hospital_Management.dir/ConsultationMedecin.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\ConsultationMedecin.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\ConsultationMedecin.h \
+ C:\Dev\Hospital_Management_System\ConsultationMedecin.cpp \
+ C:\Dev\Hospital_Management_System\ConsultationMedecin.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

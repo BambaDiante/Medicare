@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
+			"value" : "c:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -467,7 +467,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -551,7 +551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/ahmad/Documents/Hospital_Management"
+			"value" : "C:/Dev/Hospital_Management_System"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1051,7 +1051,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
+			"value" : "C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -1518,18 +1518,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Details about finding Threads"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "[TRUE][v()]"
-		},
-		{
 			"name" : "HAVE_STDATOMIC",
 			"properties" : 
 			[
@@ -1551,7 +1539,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
+			"value" : "C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
 		},
 		{
 			"name" : "Hospital_Management_IS_TOP_LEVEL",
@@ -1575,7 +1563,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ahmad/Documents/Hospital_Management"
+			"value" : "C:/Dev/Hospital_Management_System"
 		},
 		{
 			"name" : "QTCREATOR_CMAKE_HELPER_DIRECTORY",
@@ -1587,7 +1575,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper"
+			"value" : "C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",
@@ -1648,18 +1636,6 @@
 			],
 			"type" : "BOOL",
 			"value" : "ON"
-		},
-		{
-			"name" : "QT_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for QT."
-				}
-			],
-			"type" : "PATH",
-			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6"
 		},
 		{
 			"name" : "QT_ENABLE_QML_DEBUG",

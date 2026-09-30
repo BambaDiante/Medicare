@@ -1,2 +1,2 @@
 CMakeFiles/Hospital_Management.dir/Hospital_Management_autogen/EWIEGA46WW/qrc_resources.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Hospital_Management_autogen\EWIEGA46WW\qrc_resources.cpp
+ C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Hospital_Management_autogen\EWIEGA46WW\qrc_resources.cpp

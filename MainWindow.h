@@ -7,11 +7,13 @@
 #include <QLabel>
 #include <QWidget>
 #include <QEvent>
+#include <QVector>
 
 class MedecinHubForm;
 class MedicamentHubForm;
 class PatientHubForm;
 class ConsultationForm;
+class QGraphicsOpacityEffect;
 
 class MainWindow : public QMainWindow
 {
@@ -42,6 +44,12 @@ private:
     PatientHubForm *patientHubForm;
 
     ConsultationForm *consultationForm;
+
+    QGraphicsOpacityEffect *panneauOpacityEffect;
+
+    // Effets d'opacité des cartes de l'accueil (un par carte),
+    // utilisés pour l'animation d'apparition en cascade.
+    QVector<QGraphicsOpacityEffect *> carteOpacityEffects;
 
     // =========================================
     // Boutons du menu

@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ahmad\Documents\Hospital_Management
+CMAKE_SOURCE_DIR = C:\Dev\Hospital_Management_System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug
+CMAKE_BINARY_DIR = C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug
 
 # Utility rule file for Hospital_Management_autogen_timestamp_deps.
 
@@ -77,6 +77,6 @@ CMakeFiles/Hospital_Management_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/Hospital_Management_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/Hospital_Management_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ahmad\Documents\Hospital_Management C:\Users\ahmad\Documents\Hospital_Management C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\Hospital_Management_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Dev\Hospital_Management_System C:\Dev\Hospital_Management_System C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\Hospital_Management_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Hospital_Management_autogen_timestamp_deps.dir/depend
 

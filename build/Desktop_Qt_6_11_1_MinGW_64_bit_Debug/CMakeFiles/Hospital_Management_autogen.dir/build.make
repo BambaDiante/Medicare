@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ahmad\Documents\Hospital_Management
+CMAKE_SOURCE_DIR = C:\Dev\Hospital_Management_System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug
+CMAKE_BINARY_DIR = C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug
 
 # Utility rule file for Hospital_Management_autogen.
 
@@ -70,9 +70,9 @@ CMakeFiles/Hospital_Management_autogen: Hospital_Management_autogen/timestamp
 Hospital_Management_autogen/timestamp: C:/Qt/6.11.1/mingw_64/bin/moc.exe
 Hospital_Management_autogen/timestamp: C:/Qt/6.11.1/mingw_64/bin/uic.exe
 Hospital_Management_autogen/timestamp: CMakeFiles/Hospital_Management_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Hospital_Management"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/Hospital_Management_autogen.dir/AutogenInfo.json Debug
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Hospital_Management"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/Hospital_Management_autogen.dir/AutogenInfo.json Debug
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/timestamp
 
 Hospital_Management_autogen: CMakeFiles/Hospital_Management_autogen
 Hospital_Management_autogen: Hospital_Management_autogen/timestamp
@@ -88,6 +88,6 @@ CMakeFiles/Hospital_Management_autogen.dir/clean:
 .PHONY : CMakeFiles/Hospital_Management_autogen.dir/clean
 
 CMakeFiles/Hospital_Management_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ahmad\Documents\Hospital_Management C:\Users\ahmad\Documents\Hospital_Management C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Users\ahmad\Documents\Hospital_Management\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\Hospital_Management_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Dev\Hospital_Management_System C:\Dev\Hospital_Management_System C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Dev\Hospital_Management_System\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\Hospital_Management_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Hospital_Management_autogen.dir/depend
 

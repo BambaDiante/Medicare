@@ -1,6 +1,6 @@
 CMakeFiles/Hospital_Management.dir/MedicamentListeForm.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\MedicamentListeForm.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\MedicamentListeForm.h \
+ C:\Dev\Hospital_Management_System\MedicamentListeForm.cpp \
+ C:\Dev\Hospital_Management_System\MedicamentListeForm.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -384,7 +384,7 @@ CMakeFiles/Hospital_Management.dir/MedicamentListeForm.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
- C:\Users\ahmad\Documents\Hospital_Management\ModifierMedicament.h \
+ C:\Dev\Hospital_Management_System\ModifierMedicament.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QVBoxLayout \

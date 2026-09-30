@@ -1,6 +1,7 @@
-C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/EWIEGA46WW/moc_MainWindow.cpp: C:/Users/ahmad/Documents/Hospital_Management/MainWindow.h \
-  C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/moc_predefs.h \
+C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/EWIEGA46WW/moc_MainWindow.cpp: C:/Dev/Hospital_Management_System/MainWindow.h \
+  C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/moc_predefs.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QEvent \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \
@@ -133,6 +134,7 @@ C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bi
   C:/Qt/6.11.1/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qvariant.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qvarlengtharray.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qyieldcpu.h \

@@ -155,6 +155,13 @@ ConsultationForm::ConsultationForm(QWidget *parent)
         this,
         &ConsultationForm::enregistrerConsultation
         );
+    connect
+        (
+        dateEdit,
+        &QDateEdit::userDateChanged,
+        this,
+        &ConsultationForm::verifierDate
+        );
 
     // =========================================
     // Chargement des données depuis la base
@@ -169,7 +176,14 @@ ConsultationForm::ConsultationForm(QWidget *parent)
     configurerRecherche(patientCombo, "Rechercher un patient...");
     configurerRecherche(medicamentCombo, "Rechercher un médicament...");
 }
-
+void ConsultationForm::verifierDate(const QDate &date)
+{
+    if (date > QDate::currentDate()) {
+        erreurLabel->setText("Attention : La date ne peut pas être dans le futur.");
+    } else {
+        erreurLabel->clear();
+    }
+}
 // ---------------------------------------------------------------------------
 // Recharge les 3 listes déroulantes (à appeler à chaque ouverture de la page)
 // ---------------------------------------------------------------------------

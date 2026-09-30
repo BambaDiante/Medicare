@@ -1,6 +1,6 @@
 CMakeFiles/Hospital_Management.dir/MedicamentForm.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\MedicamentForm.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\MedicamentForm.h \
+ C:\Dev\Hospital_Management_System\MedicamentForm.cpp \
+ C:\Dev\Hospital_Management_System\MedicamentForm.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

@@ -1,5 +1,5 @@
-C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/EWIEGA46WW/moc_MedicamentListeForm.cpp: C:/Users/ahmad/Documents/Hospital_Management/MedicamentListeForm.h \
-  C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/moc_predefs.h \
+C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/EWIEGA46WW/moc_MedicamentListeForm.cpp: C:/Dev/Hospital_Management_System/MedicamentListeForm.h \
+  C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/moc_predefs.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \

@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>style.qss</file>
         <file>accueil.png</file>
+        <file>medicale.jpg</file>
     </qresource>
 </RCC>

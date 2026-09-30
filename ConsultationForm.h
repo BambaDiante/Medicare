@@ -28,6 +28,7 @@ private slots:
     void ajouterMedicamentALaListe();
     void retirerMedicamentDeLaListe();
     void enregistrerConsultation();
+    void verifierDate(const QDate &date);
 
 private:
     // Chargement des listes déroulantes depuis la base

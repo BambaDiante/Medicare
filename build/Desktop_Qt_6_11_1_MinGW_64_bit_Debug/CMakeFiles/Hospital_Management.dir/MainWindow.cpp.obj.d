@@ -1,6 +1,6 @@
 CMakeFiles/Hospital_Management.dir/MainWindow.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\MainWindow.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\MainWindow.h \
+ C:\Dev\Hospital_Management_System\MainWindow.cpp \
+ C:\Dev\Hospital_Management_System\MainWindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -405,14 +405,58 @@ CMakeFiles/Hospital_Management.dir/MainWindow.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qeventloop.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qdeadlinetimer.h \
- C:\Users\ahmad\Documents\Hospital_Management\MedecinHubForm.h \
- C:\Users\ahmad\Documents\Hospital_Management\MedicamentHubForm.h \
- C:\Users\ahmad\Documents\Hospital_Management\PatientHubForm.h \
- C:\Users\ahmad\Documents\Hospital_Management\ConsultationForm.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
+ C:\Dev\Hospital_Management_System\MedecinHubForm.h \
+ C:\Dev\Hospital_Management_System\MedicamentHubForm.h \
+ C:\Dev\Hospital_Management_System\PatientHubForm.h \
+ C:\Dev\Hospital_Management_System\ConsultationForm.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayout.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayoutitem.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qgridlayout.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QVBoxLayout \
- C:/Qt/6.11.1/mingw_64/include/QtGui/QFont
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QStackedLayout \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qstackedlayout.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/QFont \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/QResizeEvent \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qevent.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qeventpoint.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qvector2d.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qvectornd.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qpointingdevice.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qinputdevice.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qscreen.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QList \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QRect \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QSize \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QSizeF \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/QTransform \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qscreen_platform.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qguiapplication.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qinputmethod.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/QPixmap \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/QIcon \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/QPainter \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qpainter.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qtextoption.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qpen.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/QPainterPath \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qpainterpath.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QGraphicsOpacityEffect \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qgraphicseffect.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QPropertyAnimation \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qpropertyanimation.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvariantanimation.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qabstractanimation.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qeasingcurve.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVariantAnimation \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/QColor \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QFrame

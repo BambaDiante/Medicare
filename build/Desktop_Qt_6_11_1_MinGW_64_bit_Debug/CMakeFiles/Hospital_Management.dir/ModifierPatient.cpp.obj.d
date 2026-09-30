@@ -1,6 +1,6 @@
 CMakeFiles/Hospital_Management.dir/ModifierPatient.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\ModifierPatient.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\ModifierPatient.h \
+ C:\Dev\Hospital_Management_System\ModifierPatient.cpp \
+ C:\Dev\Hospital_Management_System\ModifierPatient.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

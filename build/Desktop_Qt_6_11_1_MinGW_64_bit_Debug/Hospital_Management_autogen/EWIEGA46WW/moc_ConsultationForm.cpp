@@ -42,7 +42,9 @@ template <> constexpr inline auto ConsultationForm::qt_create_metaobjectdata<qt_
         "ajouterMedicamentALaListe",
         "",
         "retirerMedicamentDeLaListe",
-        "enregistrerConsultation"
+        "enregistrerConsultation",
+        "verifierDate",
+        "date"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -52,6 +54,10 @@ template <> constexpr inline auto ConsultationForm::qt_create_metaobjectdata<qt_
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'enregistrerConsultation'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'verifierDate'
+        QtMocHelpers::SlotData<void(const QDate &)>(5, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QDate, 6 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -78,10 +84,10 @@ void ConsultationForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
         case 0: _t->ajouterMedicamentALaListe(); break;
         case 1: _t->retirerMedicamentDeLaListe(); break;
         case 2: _t->enregistrerConsultation(); break;
+        case 3: _t->verifierDate((*reinterpret_cast<std::add_pointer_t<QDate>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *ConsultationForm::metaObject() const
@@ -103,14 +109,14 @@ int ConsultationForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

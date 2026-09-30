@@ -1,6 +1,6 @@
 CMakeFiles/Hospital_Management.dir/ConsultationPatient.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\ConsultationPatient.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\ConsultationPatient.h \
+ C:\Dev\Hospital_Management_System\ConsultationPatient.cpp \
+ C:\Dev\Hospital_Management_System\ConsultationPatient.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -385,7 +385,7 @@ CMakeFiles/Hospital_Management.dir/ConsultationPatient.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
- C:\Users\ahmad\Documents\Hospital_Management\DetailConsultation.h \
+ C:\Dev\Hospital_Management_System\DetailConsultation.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QVBoxLayout \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayout.h \

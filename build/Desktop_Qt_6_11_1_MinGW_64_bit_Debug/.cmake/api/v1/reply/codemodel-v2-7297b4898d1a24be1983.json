@@ -43,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Hospital_Management::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Hospital_Management-Debug-e177c0dd245b8fad7ed2.json",
+					"jsonFile" : "target-Hospital_Management-Debug-0d23b6b4fb2be5e098f3.json",
 					"name" : "Hospital_Management",
 					"projectIndex" : 0
 				},
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
-		"source" : "C:/Users/ahmad/Documents/Hospital_Management"
+		"build" : "C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
+		"source" : "C:/Dev/Hospital_Management_System"
 	},
 	"version" : 
 	{

@@ -1,6 +1,6 @@
 CMakeFiles/Hospital_Management.dir/AjoutPatientForm.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\AjoutPatientForm.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\AjoutPatientForm.h \
+ C:\Dev\Hospital_Management_System\AjoutPatientForm.cpp \
+ C:\Dev\Hospital_Management_System\AjoutPatientForm.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

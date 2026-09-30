@@ -18,9 +18,6 @@ int main(int argc, char *argv[])
         styleFile.close();
     }
 
-    // =========================================
-    // Connexion à MySQL
-    // =========================================
     QSqlDatabase db =
         QSqlDatabase::addDatabase("QMYSQL", "hospital_connection");
     db.setHostName("localhost");
@@ -28,12 +25,18 @@ int main(int argc, char *argv[])
     db.setDatabaseName("hopital");
     db.setUserName("root");
     db.setPassword("");
+
+
+    // =========================================
     if (!db.open())
     {
         qDebug() << "Erreur de connexion MySQL :";
-        qDebug() << db.lastError().text();
+        qDebug() << "Native error code:" << db.lastError().nativeErrorCode();
+        qDebug() << "Driver text:" << db.lastError().driverText().toUtf8().toHex();
+        qDebug() << "Database text:" << db.lastError().databaseText().toUtf8().toHex();
         return 1;
     }
+
     qDebug() << "Connexion MySQL réussie !";
 
     // =========================================

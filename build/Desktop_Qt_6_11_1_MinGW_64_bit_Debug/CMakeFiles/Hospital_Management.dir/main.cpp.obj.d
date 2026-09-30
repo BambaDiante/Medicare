@@ -1,5 +1,5 @@
 CMakeFiles/Hospital_Management.dir/main.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\main.cpp \
+ C:\Dev\Hospital_Management_System\main.cpp \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -393,7 +393,7 @@ CMakeFiles/Hospital_Management.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtSql/QSqlError \
  C:/Qt/6.11.1/mingw_64/include/QtSql/qsqlerror.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QDebug \
- C:\Users\ahmad\Documents\Hospital_Management\MainWindow.h \
+ C:\Dev\Hospital_Management_System\MainWindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
@@ -423,7 +423,9 @@ CMakeFiles/Hospital_Management.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qurl.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QEvent \
- C:\Users\ahmad\Documents\Hospital_Management\LoginForm.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
+ C:\Dev\Hospital_Management_System\LoginForm.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/QFile \

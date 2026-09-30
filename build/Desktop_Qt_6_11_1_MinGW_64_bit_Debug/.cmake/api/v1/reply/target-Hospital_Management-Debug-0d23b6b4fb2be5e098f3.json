@@ -324,7 +324,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/Users/ahmad/Documents/Hospital_Management/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/include"
+					"path" : "C:/Dev/Hospital_Management_System/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Hospital_Management_autogen/include"
 				},
 				{
 					"backtrace" : 22,
@@ -396,11 +396,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "Hospital_Management_autogen::@6890427a1f51a3e7e1df"
+			"id" : "Hospital_Management_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "Hospital_Management_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "Hospital_Management_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Hospital_Management::@6890427a1f51a3e7e1df",

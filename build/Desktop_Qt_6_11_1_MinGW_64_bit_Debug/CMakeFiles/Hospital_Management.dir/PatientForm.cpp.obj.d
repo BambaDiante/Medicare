@@ -1,6 +1,6 @@
 CMakeFiles/Hospital_Management.dir/PatientForm.cpp.obj: \
- C:\Users\ahmad\Documents\Hospital_Management\PatientForm.cpp \
- C:\Users\ahmad\Documents\Hospital_Management\PatientForm.h \
+ C:\Dev\Hospital_Management_System\PatientForm.cpp \
+ C:\Dev\Hospital_Management_System\PatientForm.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -384,10 +384,10 @@ CMakeFiles/Hospital_Management.dir/PatientForm.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
- C:\Users\ahmad\Documents\Hospital_Management\ConsultationPatient.h \
+ C:\Dev\Hospital_Management_System\ConsultationPatient.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
- C:\Users\ahmad\Documents\Hospital_Management\ModifierPatient.h \
+ C:\Dev\Hospital_Management_System\ModifierPatient.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QVBoxLayout \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayout.h \
